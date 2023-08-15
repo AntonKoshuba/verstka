@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Вёрстка за 7 шагов</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Bootstrap -->
+    <meta content="Вёрстка статьи за 7 шагов" property="og:title">
+    <meta content="https://antonkoshuba.ru/verstka/" property="og:url">
+    <meta content="Как сверстать простую хтмл-страницу за 7 шагов." property="og:description">
+    <meta content="article" property="og:type">
+    <meta content="https://antonkoshuba.ru/verstka/i/og.png" property="og:image">
+    <link type="image/x-icon" rel="shortcut icon" href="i/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" rel="stylesheet"><!--Original CSS-->
+    <link href="style.css" rel="stylesheet"><!-- Font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="article container">
+        <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12">
+                <img src="i/illu4.png" style="max-width: 90%; border-radius: 20px;">
+            </div>
+
+
+            <div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
+                <div class="box-birka">
+                    <div class="birka">
+                        &#128104;&#8205;&#127908; дизайнеру
+                    </div>
+
+                    <div class="birka">
+                        &#129299; студенту
+                    </div>
+
+                    <div class="birka">
+                        &#128104;&#8205;&#128187; редактору
+                    </div>
+
+                    <div class="birka">
+                        &#128129; верстальщику
+                    </div>
+                </div>
+
+
+                <div class="box-birkav">
+                    <div class="birka" style="width: 170px;">
+                        #сверстать статью
+                    </div>
+
+                    <div class="birka" style="width: 270px;">
+                        #подготовить курсовую работу
+                    </div>
+
+                    <div class="birka" style="width: 220px;">
+                        #протестировать дизайн
+                    </div>
+
+                    <div class="birka" style="width: 180px;">
+                        #подготовить макет
+                    </div>
+                </div>
+            </div>
+
+             <div style="margin-bottom:30px;" class="hidden-lg hidden-md col-sm-7 col-xs-12">
+                <div class="box-birka">
+                    <div class="birka">
+                         дизайнеру
+                    </div>
+
+                    <div class="birka">
+                        студенту
+                    </div>
+
+                    <div class="birka">
+                        редактору
+                    </div>
+
+                    <div class="birka">
+                        верстальщику
+                    </div>
+                </div>
+
+
+                <div class="box-birkav">
+                    <div class="birka" style="width: 170px;">
+                        #сверстать статью
+                    </div>
+
+                    <div class="birka" style="width: 270px;">
+                        #подготовить курсовую работу
+                    </div>
+
+                    <div class="birka" style="width: 220px;">
+                        #протестировать дизайн
+                    </div>
+
+                    <div class="birka" style="width: 180px;">
+                        #подготовить макет
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+                <h1 class="title">Верстаем статью в <span class="smallcapitals">ХТМЛ</span> за 7 шагов</h1>
+
+                <p class="liead">У вас всё получится.</p>
+
+                <p>В&nbsp;этой статье мы&nbsp;сверстаем простую <span class="smallcapitals">ХТМЛ</span>-страницу. Это пригодится, если&nbsp;вы студент школы редакторов и&nbsp;вам через 2&nbsp;недели сдавать курсовую работу. Хочется сделать круто, во&nbsp;всём разобраться, а&nbsp;собирать статью в&nbsp;конструкторе нет желания.</p>
+
+                <p>Мы&nbsp;не&nbsp;будем останавливаться подробно на&nbsp;каждом теге, классе, стиле. Если вы&nbsp;до&nbsp;этого ни&nbsp;разу не&nbsp;верстали веб-документы&nbsp;&mdash; просто повторяйте шаги и&nbsp;у&nbsp;вас всё получится.</p>
+
+                <p>Это учебная статья. В&nbsp;ней нет оригинальных дизайнерских решений и&nbsp;версии для мобильных. Основная задача&nbsp;&mdash; показать, что вёрстка это не&nbsp;злобный крокодил, а&nbsp;логичный и&nbsp;доступный инструмент.</p>
+
+                <h2>Легенда</h2>
+
+                <p>К&nbsp;нам обратились ребята из&nbsp;Бюро Горбунова с&nbsp;просьбой сделать обучающую статью для студентов. Дедлайн через 3&nbsp;дня.</p>
+
+                <p>За&nbsp;2&nbsp;дня мы&nbsp;составили структуру, написали текст и&nbsp;подготовили иллюстрации, осталась вёрстка. Завтра дедлайн и нам надо за один вечер собрать статью в <span class="smallcapitals">ХТМЛ</span>.</p>
+
+                <p>Для работы подойдет любой редактор кода, мы&nbsp;используем <a href="https://www.sublimetext.com/">Sublime Text</a> или <a href="https://code.visualstudio.com/">VS&nbsp;Сode</a>.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+                <h2>Готовим шаблон</h2>
+
+                <p>Начнем с&nbsp;пустого шаблона <span class="smallcapitals">ХТМЛ</span>-документа. Сразу разметим, где будут стили, а&nbsp;где&nbsp;&mdash; текст статьи. Это поможет не&nbsp;перепутать, что и&nbsp;куда писать. Общий код шаблона страницы будет выглядеть так:</p>
+
+                <pre><code class="block">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Как подготовиться к работе над курсовой&lt;/title&gt;
+    
+    &lt;style&gt; 
+    <span class="coment">&lt;!-- здесь будут стили !--&gt;</span> 
+    &lt;/style&gt; 
+
+&lt;/head&gt;
+&lt;body&gt;
+    <span class="coment">&lt;!-- здесь будет текст статьи !--&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <p>На&nbsp;следующем шаге настроем типографику&nbsp;&mdash; выберем шрифт, кегль, интерлиньяж.</p>
+
+                <p>Зададим отступы слева и&nbsp;справа&nbsp;&mdash; это похоже на&nbsp;школьную тетрадь, где с&nbsp;одной стороны поля, а&nbsp;с&nbsp;другой&nbsp;&mdash; отступ в&nbsp;пару клеток.</p>
+
+                <p>Пропишем стили для флекс-контейнера&nbsp;&mdash; это этажи и&nbsp;ячейки, внутри которых будет текст и&nbsp;иллюстрации.</p>
+
+                <p>Вот что у&nbsp;нас получилось:</p>
+
+                <pre><code class="block">&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;ru&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt;Как подготовиться к работе над курсовой&lt;/title&gt;
+  &lt;style&gt; 
+
+    /*Настраиваем типографику*/
+     :root {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      box-sizing: border-box;
+     }
+
+     h1 {
+      font-size: 2.25rem;
+      line-height: 1.3em;
+      font-weight: bold;
+     }
+    
+    /*Настраиваем основную колонку для статьи*/
+     .conteiner{
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-left: 5em;
+      margin-right: 5em;
+     } 
+
+     /*row — флекс-контейнер, этаж сетки*/
+     .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+     }
+
+     /*col-1 — основная колонка текста*/
+     .col-1 {
+        flex-basis: 66.6%;
+        max-width: 66.6%;}
+
+    /*col-2 — колонка на полях*/
+     .col-2{
+        flex-basis: 33.3%;
+        max-width: 33.3%;
+     }
+  &lt;/style&gt; 
+
+&lt;/head&gt;
+&lt;body&gt;
+
+    <span class="coment">&lt;!-- здесь будет текст статьи !--&gt;</span>
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Этаж с&nbsp;главной иллюстрацией</h2>
+
+            <p>Создадим первый этаж статьи после открывающего тега <code>&lt;body&gt;</code>:</p>
+
+            <pre><code class="block">&lt;body&gt;
+  &lt;article class="conteiner"&gt;
+    &lt;div class="row"&gt;
+
+      <span class="coment">&lt;!-- здесь будет иллюстрация !--&gt;</span>
+
+    &lt;/div&gt;</code></pre>
+
+            <p>Мы&nbsp;заранее подготовили все иллюстрации, знаем их&nbsp;размер, место и&nbsp;где они должны быть в&nbsp;статье.</p>
+
+            <p>Чтобы вставить иллюстрацию, надо добавить тег <code>&lt;img src="имя картинки"&gt;</code>. Если картинки лежат в&nbsp;отдельной папке&nbsp;&mdash; указываем адрес и&nbsp;имя картинки через <code>/</code><br>
+            <code>&lt;img src="имя папки/имя картинки"&gt;</code>.</p>
+
+            <p>В&nbsp;нашем случае тег будет выглядеть так:</p>
+
+            <pre><code class="block">&lt;img class="logo" src="i/first.png"&gt;</code></pre>
+
+            <p>По&nbsp;умолчанию браузер показывает картинки в&nbsp;полном размере, если картинка больше&nbsp;&mdash; это выглядит некрасиво. Добавим в&nbsp;стили ограничение на&nbsp;размер картинки, чтобы она не&nbsp;вылезала за&nbsp;границы блока и&nbsp;нижний отступ. Этот код нужно разместить между тегами <code>&lt;style&gt;</code> и <code>&lt;/style&gt;</code>:</p>
+
+            <pre><code class="block">img{max-width: 100%;}
+
+.logo{
+max-width: 68%;
+margin-bottom: 15px;
+}</code></pre>
+
+            <p>Посмотрим, как это выглядит в&nbsp;браузере:</p>
+            <img src="i/1.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Заголовок, лид, фото автора</h2>
+
+            <p>Этот и&nbsp;последующие этажи будем собирать по&nbsp;такой структуре:</p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+    &lt;div class="col-1"&gt;
+        <code class="coment">&lt;!-- основная колонка статьи !--&gt;</code>
+    &lt;/div&gt;
+
+    &lt;div class="col-2 sidenote"&gt;
+        <code class="coment">&lt;!-- колонка на полях !--&gt;</code>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <p>Добавим заголовок, лид-абзац, а&nbsp;фото автора разместим на&nbsp;полях. Фото можно заменить на&nbsp;фактоид, если в&nbsp;вашей статье нет ни&nbsp;того ни&nbsp;другого&nbsp;&mdash; удалите содержимое колонки на&nbsp;полях.</p>
+
+            <p>Чтобы добавить заголовок, используем тег <code>&lt;h1&gt;...&lt;/h1&gt;</code>, абзац <code>&lt;p&gt;...&lt;/p&gt;</code>, картинку&nbsp;&mdash; уже знакомый тег <code>&lt;imd src="имя папки/имя картинки"&gt;</code>. Подпись к&nbsp;картинке добавляем тегом <code>&lt;p&gt;...&lt;/p&gt;</code>.</p>
+
+        <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        <span class="coment">&lt;h1&gt;...&lt;/h1&gt;</span>
+        <span class="coment">&lt;p&gt;...&lt;/p&gt;</span>
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote author"&gt;
+        <span class="coment">&lt;imd src="имя папки/имя картинки"&gt;</span>
+        <span class="coment">&lt;p&gt;...&lt;/p&gt;</span>
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>По&nbsp;умолчанию у&nbsp;каждого тега есть свои отступы. Чтобы пододвинуть подпись ближе к&nbsp;картинке, добавим тегу <code>&lt;p&gt;</code>отрицательный отступ: <code>style=&#34;margin-top: -5px;&#34;</code> и&nbsp;стили для фото автора и&nbsp;заметок на&nbsp;полях:</p>
+
+            <pre><code class="block">.author img{
+     width: 75px;
+     height: 75px;
+     }
+
+     .sidenote{
+     padding-left: 25px;
+     }
+
+     .sidenote p, a{
+     font-size: 14px;
+     }</code></pre>
+
+            <p>Собираем:</p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h1&gt;Как подготовиться к работе над курсовой&lt;/h1&gt;
+
+        &lt;p&gt;На 15-ой неделе всем студентам школы редакторов ...&lt;/p&gt;
+
+        &lt;p&gt;Чтобы уменьшить количество тревожности ...&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote author"&gt;
+        &lt;img style="margin-top: 55px;" alt="фото автора" src="i/anton.png"&gt;
+        &lt;p style="margin-top: -5px;"&gt;Антон Кошуба&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>В&nbsp;браузере:</p>
+            <img src="i/2.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Боевой модуль: подзаголовок, абзац, иллюстрация, заметка на&nbsp;полях</h2>
+
+            <p>На&nbsp;этом этаже создадим основной модуль статьи: подзаголовок, абзац, иллюстрацию, заметку на&nbsp;полях. Если для вашей статьи нужно несколько таких этажей, копируйте блоки и&nbsp;заполняйте содержимым.</p>
+
+            <p>Структура будет такой:</p>
+
+            <p><code>&lt;h2&gt;....&lt;/h2&gt;</code> — подзаголовок,<br>
+            <code>&lt;p&gt;...&lt;/p&gt;</code> — абзац,<br>
+            <code>&lt;imd src=&#34;&#1080;&#1084;&#1103; &#1087;&#1072;&#1087;&#1082;&#1080;/&#1080;&#1084;&#1103; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1082;&#1080;&#34;&gt;</code> — иллюстрация,<br>
+            <code>&lt;p&gt;...&lt;/p&gt;</code> — подпись под иллюстрацией.</p>
+
+            <p>Для заметки на&nbsp;полях возьмем тег <code>&lt;p&gt;...&lt;/p&gt;</code> и&nbsp;добавим к&nbsp;нему ссылку:</p>
+
+            <pre><code class="block">&lt;p&gt;... &lt;a href="адрес ссылки"&gt; текст ссылки &lt;/a&gt;&lt;/p&gt;</code></pre>
+
+            <p>По&nbsp;умолчанию заметки прибиваются к&nbsp;верхнему краю этажа. Чтобы поставить заметку ниже, используем свойство <code>&lt;p style="padding-top: 83px;"&gt;... &lt;/p&gt;</code></p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Перечитать лекции&lt;/h2&gt;
+
+        &lt;p&gt;Если кратко — за 14 недель в Бюро дают очень много материала.&lt;/p&gt;
+
+        &lt;p&gt;Так выглядит первая неделя в учебном кабинете студента:&lt;/p&gt;
+        &lt;img alt="расписание на первую неделю" src="i/week.png"&gt;
+
+        &lt;p class="caption"&gt;Все лекции есть в видео и текстовом вариантах&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;p style="padding-top: 83px;"&gt;Артемий Лебедев. &lt;a class="link" href="https://www.artlebedev.ru/kovodstvo/sections/136/"&gt;Теория близости&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>Добавим стили для подписи и&nbsp;ссылки:</p>
+
+            <pre><code class="block">/*Настраиваем вид и поведение ссылок при наведении*/
+     a.link {
+      color: #5d91c2;
+      text-decoration: none;
+      border-bottom: 1px solid #5d91c2;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+     }
+
+     /*Задаем типографику подписи под иллюстрацией*/
+     p.caption{
+     font-size: 14px;
+     line-height: 18px;
+     margin-top: 0px;
+     }
+</code></pre>
+
+            <p>В&nbsp;браузере:</p>
+            <img src="i/3.png"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Кликабельный фактоид и&nbsp;иллюстрация</h2>
+
+            <p>Создадим следующий этаж статьи. Добавим подзаголовок <code>&lt;h2&gt;</code>, абзац <code>&lt;p&gt;</code>, иллюстрацию&nbsp;<code>&lt;img&gt;</code>.</p>
+
+            <p>Фактоид сделаем картинкой, после нажатия на&nbsp;которую откроется сайт советов Бюро. Для&nbsp;этого обернем тег <code>&lt;img&gt;</code> в тег <code>&lt;a&gt;</code></p>
+
+            <pre><code class="block">&lt;a href="адрес ссылки"&gt; &lt;imd src="имя папки/имя картинки"&gt; &lt;/a&gt;</code></pre>
+
+            <p>Чтобы фактоид и&nbsp;иллюстрация выделялись при наведении мышкой, добавим стили:</p>
+
+            <pre><code class="block">a img {
+      color: #5d91c2;
+      text-decoration: none;
+      border: none;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover img {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+      opacity: 0.8;
+      border: solid .1px;
+     }</code></pre>
+
+            <p>Аналогично поступим с&nbsp;иллюстрацией в&nbsp;конце этажа.</p>
+
+            <p>Собираем</p>
+
+            <pre><code class="block"> &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Читать советы&lt;/h2&gt;
+
+        &lt;p&gt;Если лекций недостаточно — ищите ответ в «Советах». На сайте есть удобный поиск — достаточно ввести запрос и выбрать подходящий совет.&lt;/p&gt;
+        &lt;a href="https://bureau.ru/bb/soviet/found/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%8C%D1%8F%D0%B6"&gt;&lt;img alt="231 совет на запрос интерлиньяж" src="i/inter.png"&gt;&lt;/a&gt;
+
+        &lt;p class="caption"&gt;На запрос «Интерлиньяж» найден 231 совет&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;a href="https://bureau.ru/soviet/"&gt;&lt;img alt="4245 советов на сайте бюро" src="i/sovet.png" style="margin-top: 50px;"&gt;&lt;/a&gt;
+
+        &lt;p style="margin-top: 178px;"&gt;Михаил Нозик. &lt;a class="link" href="https://bureau.ru/soviet/20191002/"&gt;Влезание в интерлиньяж&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>В&nbsp;браузере:</p>
+            <img src="i/4.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Абзац с&nbsp;подзаголовками в&nbsp;подбор</h2>
+
+            <p>Подзаголовком в&nbsp;подбор называют первое предложение абзаца. Его используют, чтобы избежать лишней вложенности и&nbsp;выделить смысловую часть абзаца.</p>
+
+            <p>Чтобы сделать подзаголовок в&nbsp;подбор, выделим первое предложение абзаца жирным, для этого используем тег <code>&lt;b&gt;...&lt;/b&gt;</code></p>
+
+            <p>Получим конструкцию <code>&lt;p&gt;&lt;b&gt;...&lt;/b&gt;.......&lt;/p&gt;</code> и&nbsp;добавим ее&nbsp;в&nbsp;этаж статьи:</p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Начните прямо сейчас&lt;/h2&gt;
+
+        &lt;p&gt;&lt;b&gt;Не откладывайте на последний день.&lt;/b&gt; Иногда бывает так что ...&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Найдите источник информации.&lt;/b&gt; Любая статья начинается с...&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Выпишите интересные темы.&lt;/b&gt; Когда вы определились ...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>В&nbsp;браузере:</p>
+            <img src="i/5.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
+            <h2>Плашка</h2>
+
+            <p>В&nbsp;конце статьи сделаем цветную плашку с&nbsp;основными мыслями или важным посланием автора. Задача плашки&nbsp;&mdash; привлечь внимание и&nbsp;что-то сказать. Ее&nbsp;не&nbsp;обязательно делать в&nbsp;конце статьи.</p>
+
+            <p>Создадим этаж и&nbsp;добавим туда маркерованый список:</p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1 end"&gt;
+
+        &lt;h2&gt;...&lt;/h2&gt; — подзаголовок плашки
+        &lt;ul&gt;
+          &lt;li&gt;...&lt;/li&gt; — элемент списка
+          &lt;li&gt;...&lt;/li&gt; — элемент списка
+          &lt;li&gt;...&lt;/li&gt; — элемент списка
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>Чтобы убрать буллиты и&nbsp;отступ, добавим стили:</p>
+
+            <pre><code class="block">/*Убираем буллиты и отступ слева*/
+     ul {
+      list-style: none inside;
+      padding-left: 0;
+     }
+
+     /*Задаем отступы между элементами перечня*/
+     * + li {
+      margin-top: .4rem;
+     }</code></pre>
+
+            <p>Покрасим плашку в&nbsp;нежно-голубой:</p>
+
+            <pre><code class="block">/*Настраиваем плашку*/
+     .end{
+      background-color:#deefff;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      padding: 1em;
+     }</code></pre>
+
+            <p>Собираем:</p>
+
+            <pre><code class="block">&lt;div class="row"&gt;
+      &lt;div class="col-1 end"&gt;
+        &lt;h2&gt;Что дальше&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Перечитывайте и пересматривайте лекции&lt;/li&gt;
+          &lt;li&gt;Читайте советы&lt;/li&gt;
+          &lt;li&gt;Смотрите разборы работ предыдущих потоков&lt;/li&gt;
+          &lt;li&gt;Находите полезное&lt;/li&gt;
+          &lt;li&gt;Делайте кайфовое&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+            <p>В&nbsp;браузере:</p>
+            <img src="i/6.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <h2>Вот что получилось</h2>
+
+                <p>Сравним нашу статью с&nbsp;макетом.</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:23px;">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <img class="maket" src="i/maket.png"> 
+                <a class="caption" href="https://antonkoshuba.ru/demo/">Как подготовиться к&nbsp;работе над курсовой</a>
+            </div>
+
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-5 col-xs-5"><img src="i/illu.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 hidden-md hidden-sm hidden-xs">
+                <div class="fighter2">
+                    <details>
+                        <summary class="end">
+
+                        <h2 class="summary">Готовый код</h2>
+                        <span><svg class="strelka-bottom-3" viewbox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z">
+                        </path></svg></span></summary>
+
+                        <pre><code class="block">&lt;!DOCTYPE html&gt;
+
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Как подготовиться к работе над курсовой&lt;/title&gt;
+  &lt;style&gt; 
+
+    /*Настраиваем типографику*/
+     :root {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      box-sizing: border-box;
+     }
+    
+     h1 {
+      font-size: 2.25rem;
+      line-height: 1.3em;
+      font-weight: bold;
+     }
+    
+    /*Настраиваем основную колонку для статьи*/
+     .conteiner{
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-left: 5em;
+      margin-right: 5em;
+     } 
+
+     /*row — флекс-контейнер, этаж сетки*/
+     .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+     }
+
+     /*col-1 — основная колонка текста*/
+     .col-1 {
+        flex-basis: 66.6%;
+        max-width: 66.6%;}
+
+    /*col-2 — колонка на полях*/
+     .col-2{
+        flex-basis: 33.3%;
+        max-width: 33.3%;
+     }
+
+     img{max-width: 100%;}
+
+    .logo{
+    max-width: 68%;
+    margin-bottom: 15px;
+    }
+
+    .author img{
+     width: 75px;
+     height: 75px;
+     }
+
+     .sidenote{
+     padding-left: 25px;
+     }
+
+     .sidenote p, a{
+     font-size: 14px;
+     }
+
+
+     /*Настраиваем вид и поведение ссылок при наведении*/
+     a.link {
+      color: #5d91c2;
+      text-decoration: none;
+      border-bottom: 1px solid #5d91c2;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+     }
+
+     /*Задаем типографику подписи под иллюстрацией*/
+     p.caption{
+     font-size: 14px;
+     line-height: 18px;
+     margin-top: 0px;
+     }
+
+     a img {
+      color: #5d91c2;
+      text-decoration: none;
+      border: none;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover img {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+      opacity: 0.8;
+      border: solid .1px;
+     }
+
+     /*Настраиваем плашку*/
+     .end{
+      background-color:#deefff;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      padding: 1em;
+     }
+
+     /*Убираем буллиты и отступ слева*/
+     ul {
+      list-style: none inside;
+      padding-left: 0;
+     }
+
+     /*Задаем отступы между элементами перечня*/
+     * + li {
+      margin-top: .4rem;
+     }
+
+  &lt;/style&gt; 
+
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;article class="conteiner"&gt;
+    &lt;div class="row"&gt;
+
+      &lt;img class="logo" src="i/first.png"&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h1&gt;Как подготовиться к работе над курсовой&lt;/h1&gt;
+
+        &lt;p&gt;На 15-ой неделе всем студентам школы редакторов открываются темы курсовой работы. На всё про всё дается две недели.&lt;/p&gt;
+
+        &lt;p&gt;Чтобы уменьшить количество тревожности в этом мире, я подготовил простые советы, которые помогут при подготовке к работе над курсовой.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote author"&gt;
+        &lt;img style="margin-top: 55px;" alt="фото автора" src="i/anton.png"&gt;
+        &lt;p style="margin-top: -5px;"&gt;Антон Кошуба&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Перечитать лекции&lt;/h2&gt;
+
+        &lt;p&gt;Если кратко — за 14 недель в Бюро дают очень много материала.&lt;/p&gt;
+
+        &lt;p&gt;Так выглядит первая неделя в учебном кабинете студента:&lt;/p&gt;
+        &lt;img alt="расписание на первую неделю" src="i/week.png"&gt;
+
+        &lt;p class="caption"&gt;Все лекции есть в видео и текстовом вариантах&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;p style="padding-top: 83px;"&gt;Артемий Лебедев. &lt;a class="link" href="https://www.artlebedev.ru/kovodstvo/sections/136/"&gt;Теория близости&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Читать советы&lt;/h2&gt;
+
+        &lt;p&gt;Если лекций недостаточно — ищите ответ в «Советах». На сайте есть удобный поиск — достаточно ввести запрос и выбрать подходящий совет.&lt;/p&gt;
+        &lt;a href="https://bureau.ru/bb/soviet/found/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%8C%D1%8F%D0%B6"&gt;&lt;img alt="231 совет на запрос интерлиньяж" src="i/inter.png"&gt;&lt;/a&gt;
+
+        &lt;p class="caption"&gt;На запрос «Интерлиньяж» найден 231 совет&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;a href="https://bureau.ru/soviet/"&gt;&lt;img alt="4245 советов на сайте бюро" src="i/sovet.png" style="margin-top: 50px;"&gt;&lt;/a&gt;
+
+        &lt;p style="margin-top: 178px;"&gt;Михаил Нозик. &lt;a class="link" href="https://bureau.ru/soviet/20191002/"&gt;Влезание в интерлиньяж&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Начните прямо сейчас&lt;/h2&gt;
+
+        &lt;p&gt;&lt;b&gt;Не откладывайте на последний день.&lt;/b&gt; Иногда бывает так что на последние две недели учебы сваливается много задач: сдать финальные тесты, работа по дому, дедлайны на работе. Работать над курсовой в таком состоянии трудно, постоянно что-то отвлекает. Чтобы этого избежать начните думать о курсовой с первой недели учебы.&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Найдите источник информации.&lt;/b&gt; Любая статья начинается со сбора матриала. Посмотрите вокруг, наверняка у вас уже есть несколько знакомых в разных сферах или жизненный опыт, на основе которого можно написать статью.&lt;/p&gt;
+
+        &lt;p&gt;Например, вы разбираетесь в кофе, работали бариста и можете часами рассказывать про отличия арабики от робусты. Или вы мастерски выращиваете герань и можете дать польезные советы начинающим садоводам.&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Выпишите интересные для вас темы.&lt;/b&gt; Когда вы определились с источниками информации — выпишите темы, на которые хотите написать статью. Необязательно формулировать тему как что-то уже утвержденное, достаточно просто идеи: как верстать статю в хтмл, как выбрать миксер для большой семьи.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1 end"&gt;
+        &lt;h2&gt;Что дальше&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Перечитывайте и пересматривайте лекции&lt;/li&gt;
+          &lt;li&gt;Читайте советы&lt;/li&gt;
+          &lt;li&gt;Смотрите разборы работ предыдущих потоков&lt;/li&gt;
+          &lt;li&gt;Находите полезное&lt;/li&gt;
+          &lt;li&gt;Делайте кайфовое&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </details>
+                </div>
+            </div>
+
+
+            <div class="hidden-lg col-md-12 col-sm-12 col-xs-12">
+                <div class="fighter2mob">
+                    <details>
+                        <summary class="end">
+
+                        <h2 class="summary">Готовый код</h2>
+                        <span><svg class="strelka-bottom-3" viewbox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z">
+                        </path></svg></span></summary>
+
+                        <pre><code class="block">&lt;!DOCTYPE html&gt;
+
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Как подготовиться к работе над курсовой&lt;/title&gt;
+  &lt;style&gt; 
+
+    /*Настраиваем типографику*/
+     :root {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      box-sizing: border-box;
+     }
+    
+     h1 {
+      font-size: 2.25rem;
+      line-height: 1.3em;
+      font-weight: bold;
+     }
+    
+    /*Настраиваем основную колонку для статьи*/
+     .conteiner{
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-left: 5em;
+      margin-right: 5em;
+     } 
+
+     /*row — флекс-контейнер, этаж сетки*/
+     .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+     }
+
+     /*col-1 — основная колонка текста*/
+     .col-1 {
+        flex-basis: 66.6%;
+        max-width: 66.6%;}
+
+    /*col-2 — колонка на полях*/
+     .col-2{
+        flex-basis: 33.3%;
+        max-width: 33.3%;
+     }
+
+     img{max-width: 100%;}
+
+    .logo{
+    max-width: 68%;
+    margin-bottom: 15px;
+    }
+
+    .author img{
+     width: 75px;
+     height: 75px;
+     }
+
+     .sidenote{
+     padding-left: 25px;
+     }
+
+     .sidenote p, a{
+     font-size: 14px;
+     }
+
+
+     /*Настраиваем вид и поведение ссылок при наведении*/
+     a.link {
+      color: #5d91c2;
+      text-decoration: none;
+      border-bottom: 1px solid #5d91c2;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+     }
+
+     /*Задаем типографику подписи под иллюстрацией*/
+     p.caption{
+     font-size: 14px;
+     line-height: 18px;
+     margin-top: 0px;
+     }
+
+     a img {
+      color: #5d91c2;
+      text-decoration: none;
+      border: none;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover img {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+      opacity: 0.8;
+      border: solid .1px;
+     }
+
+     /*Настраиваем плашку*/
+     .end{
+      background-color:#deefff;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      padding: 1em;
+     }
+
+     /*Убираем буллиты и отступ слева*/
+     ul {
+      list-style: none inside;
+      padding-left: 0;
+     }
+
+     /*Задаем отступы между элементами перечня*/
+     * + li {
+      margin-top: .4rem;
+     }
+
+  &lt;/style&gt; 
+
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;article class="conteiner"&gt;
+    &lt;div class="row"&gt;
+
+      &lt;img class="logo" src="i/first.png"&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h1&gt;Как подготовиться к работе над курсовой&lt;/h1&gt;
+
+        &lt;p&gt;На 15-ой неделе всем студентам школы редакторов открываются темы курсовой работы. На всё про всё дается две недели.&lt;/p&gt;
+
+        &lt;p&gt;Чтобы уменьшить количество тревожности в этом мире, я подготовил простые советы, которые помогут при подготовке к работе над курсовой.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote author"&gt;
+        &lt;img style="margin-top: 55px;" alt="фото автора" src="i/anton.png"&gt;
+        &lt;p style="margin-top: -5px;"&gt;Антон Кошуба&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Перечитать лекции&lt;/h2&gt;
+
+        &lt;p&gt;Если кратко — за 14 недель в Бюро дают очень много материала.&lt;/p&gt;
+
+        &lt;p&gt;Так выглядит первая неделя в учебном кабинете студента:&lt;/p&gt;
+        &lt;img alt="расписание на первую неделю" src="i/week.png"&gt;
+
+        &lt;p class="caption"&gt;Все лекции есть в видео и текстовом вариантах&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;p style="padding-top: 83px;"&gt;Артемий Лебедев. &lt;a class="link" href="https://www.artlebedev.ru/kovodstvo/sections/136/"&gt;Теория близости&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Читать советы&lt;/h2&gt;
+
+        &lt;p&gt;Если лекций недостаточно — ищите ответ в «Советах». На сайте есть удобный поиск — достаточно ввести запрос и выбрать подходящий совет.&lt;/p&gt;
+        &lt;a href="https://bureau.ru/bb/soviet/found/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%8C%D1%8F%D0%B6"&gt;&lt;img alt="231 совет на запрос интерлиньяж" src="i/inter.png"&gt;&lt;/a&gt;
+
+        &lt;p class="caption"&gt;На запрос «Интерлиньяж» найден 231 совет&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-2 sidenote"&gt;
+        &lt;a href="https://bureau.ru/soviet/"&gt;&lt;img alt="4245 советов на сайте бюро" src="i/sovet.png" style="margin-top: 50px;"&gt;&lt;/a&gt;
+
+        &lt;p style="margin-top: 178px;"&gt;Михаил Нозик. &lt;a class="link" href="https://bureau.ru/soviet/20191002/"&gt;Влезание в интерлиньяж&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h2&gt;Начните прямо сейчас&lt;/h2&gt;
+
+        &lt;p&gt;&lt;b&gt;Не откладывайте на последний день.&lt;/b&gt; Иногда бывает так что на последние две недели учебы сваливается много задач: сдать финальные тесты, работа по дому, дедлайны на работе. Работать над курсовой в таком состоянии трудно, постоянно что-то отвлекает. Чтобы этого избежать начните думать о курсовой с первой недели учебы.&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Найдите источник информации.&lt;/b&gt; Любая статья начинается со сбора матриала. Посмотрите вокруг, наверняка у вас уже есть несколько знакомых в разных сферах или жизненный опыт, на основе которого можно написать статью.&lt;/p&gt;
+
+        &lt;p&gt;Например, вы разбираетесь в кофе, работали бариста и можете часами рассказывать про отличия арабики от робусты. Или вы мастерски выращиваете герань и можете дать польезные советы начинающим садоводам.&lt;/p&gt;
+
+        &lt;p&gt;&lt;b&gt;Выпишите интересные для вас темы.&lt;/b&gt; Когда вы определились с источниками информации — выпишите темы, на которые хотите написать статью. Необязательно формулировать тему как что-то уже утвержденное, достаточно просто идеи: как верстать статю в хтмл, как выбрать миксер для большой семьи.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="col-1 end"&gt;
+        &lt;h2&gt;Что дальше&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Перечитывайте и пересматривайте лекции&lt;/li&gt;
+          &lt;li&gt;Читайте советы&lt;/li&gt;
+          &lt;li&gt;Смотрите разборы работ предыдущих потоков&lt;/li&gt;
+          &lt;li&gt;Находите полезное&lt;/li&gt;
+          &lt;li&gt;Делайте кайфовое&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </details>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <h2>Что дальше</h2>
+
+                    <p>
+                    </p>
+
+                    <ul>
+                        <li>Скопируйте код;</li>
+
+                        <li>Замените текст и&nbsp;иллюстрации на&nbsp;свои;</li>
+
+                        <li>Или внесите изменения в&nbsp;шаблон на&nbsp;свой вкус;</li>
+                    </ul>
+
+                    <p>Как бесплатно разместить статью в&nbsp;интернете, расскажу в&nbsp;следующем выпуске.</p>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 150px; margin-bottom: 150px;">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <p>Научиться профессиональной вёрстке можно в&nbsp;&laquo;Яндекс Практикуме&raquo;</p>
+                    <a href="https://practicum.yandex.ru/html-css/?from=catalog">
+                    <div class="fighter btn">
+                        <p>Курс &laquo;Профессиональная вёрстка на&nbsp;HTML и&nbsp;CSS&raquo;</p>
+                    </div></a>
+                </div>
+            </div>
+
+
+
+
+
+            <footer>
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <ul>
+                            <li><b>Автор</b> Антон Кошуба</li>
+
+
+                            <li><b>Шрифт</b> Open Sans</li>
+                        </ul>
+
+                        <p><b>Источники</b>
+                        </p>
+
+                        <ul>
+                            <li>Василий Половнёв и&nbsp;Игорь Петров<br>
+                                <a href="https://bureau.ru/projects/book-html/">ХТМЛ. Вёрстка сайтов для дизайнеров, редакторов и&nbsp;руководителей</a>
+                            </li>
+
+                            <li>Журнал «Яндекс Практикума» <a href="https://thecode.media/">«КОД»</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js">
+        </script>
+    </div>
+</body>
+</html>

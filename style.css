@@ -1,0 +1,269 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  font-size: 1em;
+  line-height: 1.3em;
+}
+body {
+  /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  background: #f5f6f7;
+  color: #1b2b4c;
+  font-size: 19px;
+  line-height: 1.6em;
+  padding-bottom: 195px;
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*Сбрасываем отступы по умолчанию*/
+
+h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+}
+/*Задаем размер кегля, интерлиньяж и жирность заголовка*/
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+h1.title {
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  color: #121212;
+  font-weight: 600;
+}
+/*Отступ от заголовка до абзаца*/
+
+h1+p {
+  margin-top: 1.5rem;
+}
+/*Задаем размер кегля, интерлиньяж и жирность подзаголовка*/
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3em;
+  font-weight: normal;
+  /*margin-bottom: 30px;
+      margin-top: 60px;*/
+}
+/*Отступ до подзаголовка*/
+
+*+h2 {
+  margin-top: 2.25rem;
+}
+div h2 {
+  margin-top: 2.25rem;
+}
+/*Отступ от подзаголовка до абзаца*/
+
+h2+p {
+  margin-top: .5rem;
+}
+.summary {
+  margin-top: 0px;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+div h3 {
+  margin-top: 2.5rem;
+}
+*+h3 {
+  margin-top: 2.5rem;
+}
+h3+p {
+  margin-top: 0;
+}
+*+p {
+  margin-top: .825rem;
+}
+.caption {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0px;
+}
+/*Убираем буллиты и отступ слева*/
+
+ul {
+  list-style: none inside;
+  padding-left: 0;
+}
+/*Задаем отступы между элементами перечня*/
+
+*+li {
+  margin-top: .9rem;
+}
+/*Задаем вертикальный отсуп между абзацами*/
+
+p+p {
+  margin-top: 1.825rem;
+}
+p.liead {
+  font-size: 23px;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  text-wrap: nowrap;
+  white-space-collapse: preserve;
+  display: block;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0px;
+  overflow: visible;
+  box-sizing: border-box;
+  background-color: non;
+}
+code {
+  overflow: visible;
+  padding: 3px !important;
+  background: #e5e5e5!important;
+  color: #1b2b4c;
+  font-family: monospace;
+  max-width: 100%;
+}
+code.block {
+  border-radius: 0.3em;
+  overflow: visible;
+  padding: 3px !important;
+  background: #e5e5e5!important;
+  color: #1b2b4c;
+  font-family: monospace;
+  font-size: 16px;
+  max-width: 100%;
+  display: inline-block;
+}
+.birka {
+  background: #fff;
+  cursor: default;
+  font-size: 15px;
+  height: 30px;
+  padding: 0 15px;
+  align-items: center;
+  border-radius: 38px;
+  line-height: 0;
+  display: flex;
+}
+.box-birka {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coment {
+  color: #e2777a;
+}
+.box-birkav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  width: 300px;
+  margin-top: 50px;
+}
+.mobile {
+  font-size: 2em;
+  line-height: 1em;
+}
+.title-2-mobile {
+  font-weight: 900;
+  margin-top: -.2em;
+  margin-bottom: 1em;
+}
+.title-mobile {
+  text-align: center;
+  font-size: 2em;
+  margin-top: .3em;
+}
+img {
+  max-width: 100%;
+  margin-bottom: 2em;
+  ;
+}
+img.maket {
+  margin-bottom: 0px;
+}
+/*плашка*/
+
+.fighter {
+  border-radius: 15px;
+  padding: 30px 60px;
+  margin: 30px 0px;
+  background-color: #683eef;
+  color: #fff;
+  font-size: 18px;
+  white-space: wrap;
+}
+.fighter2 {
+  border-radius: 15px;
+  padding: 30px 60px;
+  margin: 30px -60px;
+  background-color: #e5e5e5;
+}
+
+.fighter2mob {
+  border-radius: 15px;
+  padding: 30px 60px;
+  margin: 30px 0px;
+  background-color: #e5e5e5;
+}
+
+
+.end {
+  display: flex;
+  justify-content: space-between;
+}
+/*заметка на полях*/
+
+.sidenote {
+  font-size: 15px;
+  line-height: 1.4em;
+}
+a {
+  color: #5d91c2;
+  text-decoration: none;
+  border-bottom: 1px solid #5d91c2;
+  transition: 0.3s ease-out;
+}
+a:hover {
+  color: #f06d41;
+  text-decoration: none;
+  border-color: #f06d41;
+}
+
+.smallcapitals {
+  font-variant: small-caps;
+  letter-spacing: .1em;
+
+}
+
+
+.strelka-left-3, .strelka-right-3, .strelka-top-3, .strelka-bottom-3 {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.strelka-left-3 path, .strelka-right-3 path, .strelka-top-3 path, .strelka-bottom-3 path {
+  fill: #337AB7;
+  transition: fill 0.5s ease-out;
+}
+.strelka-left-3 {
+  transform: rotate(180deg);
+}
+.strelka-top-3 {
+  transform: rotate(270deg);
+}
+.strelka-bottom-3 {
+  transform: rotate(90deg);
+}
+.strelka-left-3:hover path, .strelka-right-3:hover path, .strelka-top-3:hover path, .strelka-bottom-3:hover path {
+  fill: #000;
+}
